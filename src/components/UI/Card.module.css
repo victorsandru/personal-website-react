@@ -1,0 +1,33 @@
+.card {
+    width: 100%;
+    padding-right: var(1.5rem, 0.75rem);
+    padding-left: var(1.5rem, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .card {
+      max-width: 540px;
+    }
+  }
+  @media (min-width: 768px) {
+    .card {
+      max-width: 720px;
+    }
+  }
+  @media (min-width: 992px) {
+    .card {
+      max-width: 960px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .card {
+      max-width: 1140px;
+    }
+  }
+  @media (min-width: 1400px) {
+    .card {
+      max-width: 1320px;
+    }
+}
