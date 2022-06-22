@@ -1,7 +1,7 @@
 import styles from "./Navbar.module.css";
-import NavbarItem from "./NavbarItem";
 import NavbarImg from "./NavbarImg";
 import NavbarIcons from "./NavbarIcons";
+import NavbarNames from "./NavbarNames";
 
 const NAV_ITEMS = [
   {
@@ -27,7 +27,7 @@ const Navbar = () => {
     <div className={styles.topnav}>
       <NavbarImg />
       {NAV_ITEMS.map((item) => (
-        <NavbarItem name={item.name} key={item.id} />
+        <NavbarNames name={item.name} key={item.id} />
       ))}
       <NavbarIcons />
     </div>

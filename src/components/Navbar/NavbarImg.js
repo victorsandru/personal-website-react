@@ -1,5 +1,5 @@
 import styles from './NavbarImg.module.css';
-import headshot from './headshot.jpeg';
+import headshot from '../../media/headshot.jpeg';
 
 const NavbarImg = () => {
     return(
