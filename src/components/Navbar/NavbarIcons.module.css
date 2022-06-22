@@ -1,0 +1,18 @@
+.iconLocation {
+    color: #05386b;
+    margin-left: auto;
+    display: flex;
+    margin-bottom: 0%;
+}
+
+.icon {
+    padding: 20px 22px;
+    color: #05386b;
+    transition: color 0.15s ease-in-out;
+    border-radius: 25px;
+}
+
+.icon:hover {
+    background-color: #05386b;
+    color: white;
+  }

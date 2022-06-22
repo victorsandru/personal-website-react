@@ -1,16 +1,18 @@
 .item {
     float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 20px 22px;
+    color: #05386b;
+    padding: 19px 22px;
+    font-weight: bolder;
     text-decoration: none;
     font-size: 16px;
     transition: color 0.15s ease-in-out;
+    margin-bottom: auto;
+    border-radius: 10px;
   }
   
   .item:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #05386b;
+    color: white;
   }
   
   .item.active {

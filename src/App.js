@@ -1,12 +1,14 @@
 import Navbar from "./components/Navbar/Navbar";
 import Card from "./components/UI/Card";
+import Header from "./components/Header/Header";
+import styles from "./App.module.css";
 
 function App() {
   return (
-    <div>
+    <div className={styles.background}>
       <Navbar />
       <Card>
-        <h1>Hello World</h1>
+        <Header />
       </Card>
     </div>
   );

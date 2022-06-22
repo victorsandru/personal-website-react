@@ -1,6 +1,7 @@
 import styles from "./Navbar.module.css";
 import NavbarItem from "./NavbarItem";
 import NavbarImg from "./NavbarImg";
+import NavbarIcons from "./NavbarIcons";
 
 const NAV_ITEMS = [
   {
@@ -8,13 +9,17 @@ const NAV_ITEMS = [
     id: "0",
   },
   {
-    name: "Education",
+    name: "Experience",
     id: "1",
   },
   {
-    name: "Experience",
+    name: "Projects",
     id: "2",
   },
+  {
+    name: "Contact Me",
+    id: "3"
+  }
 ];
 
 const Navbar = () => {
@@ -24,6 +29,7 @@ const Navbar = () => {
       {NAV_ITEMS.map((item) => (
         <NavbarItem name={item.name} key={item.id} />
       ))}
+      <NavbarIcons />
     </div>
   );
 };
