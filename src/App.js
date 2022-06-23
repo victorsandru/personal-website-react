@@ -7,11 +7,11 @@ import styles from "./App.module.css";
 function App() {
   return (
     <div className={styles.background}>
-      <Navbar />
+      <Navbar id="top" />
       <Card>
         <Header />
       </Card>
-      <About />
+      <About id="about" />
     </div>
   );
 }

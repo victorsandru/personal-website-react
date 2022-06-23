@@ -14,4 +14,5 @@
 .icon:hover {
     background-color: #05386b;
     color: white;
+    cursor: pointer;
   }

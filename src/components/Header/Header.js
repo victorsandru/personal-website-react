@@ -1,8 +1,5 @@
 import HeaderAnimation from "./HeaderAnimation";
-
 import styles from "./Header.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (

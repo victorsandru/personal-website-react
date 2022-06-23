@@ -3,7 +3,7 @@ import headshot from '../../media/headshot.jpeg';
 
 const NavbarImg = () => {
     return(
-        <a><img className={styles.img} src={headshot}></img></a>
+        <div><img className={styles.img} src={headshot} alt="Victor Sandru smiling"/></div>
     )
 };
 

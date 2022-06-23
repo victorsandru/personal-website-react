@@ -24,7 +24,7 @@ const HeaderAnimation = (props) => {
       () => setIndex((index) => index + 1),
       3500 // every 3.5 seconds
     );
-    
+
     return () => clearTimeout(intervalId);
   }, []);
 

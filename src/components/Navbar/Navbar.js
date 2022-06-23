@@ -6,19 +6,23 @@ import NavbarNames from "./NavbarNames";
 const NAV_ITEMS = [
   {
     name: "About",
-    id: "0",
+    id: "about",
   },
   {
     name: "Experience",
-    id: "1",
+    id: "experience",
   },
   {
     name: "Projects",
-    id: "2",
+    id: "projects",
   },
   {
     name: "Contact Me",
-    id: "3"
+    id: "contactMe"
+  },
+  {
+    name: "Resume",
+    id: "resume"
   }
 ];
 
@@ -27,7 +31,7 @@ const Navbar = () => {
     <div className={styles.topnav}>
       <NavbarImg />
       {NAV_ITEMS.map((item) => (
-        <NavbarNames name={item.name} key={item.id} />
+        <NavbarNames name={item.name} key={item.id} id={item.id} />
       ))}
       <NavbarIcons />
     </div>
