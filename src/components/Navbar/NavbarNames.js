@@ -2,7 +2,7 @@ import styles from './NavbarNames.module.css';
 
 const NavbarNames = props => {
     return (
-        <a className={styles.item} href={`#${props.id}`}>{props.name}</a>
+        <div className={styles.item}>{props.name}</div>
     );
 }
 

@@ -26,10 +26,10 @@ const NAV_ITEMS = [
   }
 ];
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <div className={styles.topnav}>
-      <NavbarImg />
+      <NavbarImg onClick={props.onTopPageScroll}/>
       {NAV_ITEMS.map((item) => (
         <NavbarNames name={item.name} key={item.id} id={item.id} />
       ))}

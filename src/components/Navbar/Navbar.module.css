@@ -1,8 +1,10 @@
 .topnav {
-    background-color: (0,0,0,0);
-    overflow: hidden;
-    display: flex;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-  }
+  background-color: (0, 0, 0, 0);
+  color: rgb(219, 235, 196);
+  overflow: hidden;
+  display: flex;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  justify-content: center;
+}

@@ -1,9 +1,9 @@
 import styles from './NavbarImg.module.css';
 import headshot from '../../media/headshot.jpeg';
 
-const NavbarImg = () => {
+const NavbarImg = (props) => {
     return(
-        <div><img className={styles.img} src={headshot} alt="Victor Sandru smiling"/></div>
+        <div onClick={props.onClick}><img className={styles.img} src={headshot} alt="Victor Sandru smiling"/></div>
     )
 };
 

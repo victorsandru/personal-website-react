@@ -2,7 +2,7 @@
 
 .container {
   display: flex;
-  margin-top: 27rem;
+  /* margin-top: 27rem; */
   height: 100%;
   padding-top: 10rem;
   background-color: #379683 !important;
