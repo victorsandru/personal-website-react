@@ -5,9 +5,9 @@
   margin: 0 auto;
   color: rgb(219, 235, 196);
   display: grid;
-  height: 225vh;
+  height: 220vh;
   grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
-  grid-template-rows: 1.3fr 0.5fr 1fr 0.1fr;
+  grid-template-rows: 100vh 45vh 65vh 10vh;
   gap: 10px;
   grid-template-areas:
     ". main main ."
