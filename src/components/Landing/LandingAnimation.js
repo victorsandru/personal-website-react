@@ -29,7 +29,7 @@ const LandingAnimation = (props) => {
   }, []);
 
   return (
-    <div>
+    <>
       <TextTransition
         className={props.textStyles}
         direction="down"
@@ -44,7 +44,7 @@ const LandingAnimation = (props) => {
       >
         {ICONS[index % ICONS.length]}
       </TextTransition>
-    </div>
+    </>
   );
 };
 
