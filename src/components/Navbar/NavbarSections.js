@@ -1,7 +1,7 @@
-const NavbarNames = props => {
+const NavbarSections = props => {
     return (
         <div className={props.className}>{props.name}</div>
     );
 }
 
-export default NavbarNames;
+export default NavbarSections;

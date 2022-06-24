@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
 
 .main {
-  font-family: "Montserrat", sans-serif;
   grid-area: main;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   justify-content: center;
 }
 
 .greeting {
-  margin-top: 15vh;
+  margin-top: 17vh;
   font-size: 70px;
   font-weight: 600;
 }

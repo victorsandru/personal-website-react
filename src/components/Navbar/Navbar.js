@@ -1,7 +1,6 @@
 import styles from "./Navbar.module.css";
-import NavbarImg from "./NavbarImg";
 import NavbarIcons from "./NavbarIcons";
-import NavbarNames from "./NavbarNames";
+import NavbarSections from "./NavbarSections";
 
 const NAV_ITEMS = [
   {
@@ -13,25 +12,21 @@ const NAV_ITEMS = [
     id: "experience",
   },
   {
-    name: "Projects",
-    id: "projects",
-  },
-  {
-    name: "Contact Me",
-    id: "contactMe"
-  },
-  {
     name: "Resume",
-    id: "resume"
-  }
+    id: "resume",
+  },
 ];
 
-const Navbar = (props) => {
+const Navbar = () => {
   return (
-    <div className={styles.topnav}>
-      <NavbarImg onClick={props.onTopPageScroll} className={styles.img}/>
+    <div className={styles.container}>
       {NAV_ITEMS.map((item) => (
-        <NavbarNames className={styles.item} name={item.name} key={item.id} id={item.id} />
+        <NavbarSections
+          className={styles.item}
+          name={item.name}
+          key={item.id}
+          id={item.id}
+        />
       ))}
       <NavbarIcons className={styles.icon} />
     </div>

@@ -1,18 +1,21 @@
-.topnav {
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Montserrat&display=swap');
+
+.container {
+  font-family: 'Montserrat', sans-serif;
   background-color: (0, 0, 0, 0);
-  /* overflow: hidden; 
-  position: fixed; */
-  grid-area: nav;
+  color: rgb(219, 235, 196);
+  overflow: hidden; 
+  position: fixed;
+  width: 100%;
 }
 
 .item {
   float: left;
-  padding: 19px 22px;
+  padding: 20px 22px;
   font-weight: bolder;
   text-decoration: none;
   font-size: 18px;
   transition: color 0.15s ease-in-out;
-  text-align: center;
 }
 
 .item:hover {
@@ -21,6 +24,7 @@
   cursor: pointer;
 }
 
+/* 
 .img {
   max-width: 3rem;
   max-height: 3rem;
@@ -35,13 +39,7 @@
   background-color: #ddd;
   color: black;
   cursor: pointer;
-}
-
-.iconLocation {
-  margin-left: auto;
-  display: flex;
-  margin-bottom: 0%;
-}
+} */
 
 .icon {
   float: right;

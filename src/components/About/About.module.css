@@ -1,46 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Ubuntu&display=swap');
 
-.container {
-  display: flex;
-  margin-top: 27rem;
-  height: 100%;
-  padding-top: 10rem;
-  background-color: #379683 !important;
-  justify-content: space-evenly;
-  font-family: "Montserrat", sans-serif;
-  align-items: flex-start;
+.about {
+    grid-area: about;
+    text-align: left;
+    justify-self: start;
 }
 
-.containerSmall {
-  margin: auto;
-  text-align: center;
-  padding: 1rem 1rem;
-  border: 4px;
-  color: black;
-  background-color: #edf5e1;
-  border-style: solid;
-  border-color: #05386b;
-  border-radius: 0.5rem;
-  margin-bottom: 20rem;
-  text-align: center;
-  margin-right: 20rem;
-  font-weight: 400;
-  font-size: 16px;
+.subheader {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    padding-top: 5%;
 }
 
-.headerContainer {
-  margin: auto;
-  color: #edf5e1;
-  margin-top: 5rem;
-  margin-left: 5rem;
-  font-weight: 800;
-  font-size: 32px;
+.paragraph {
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 2%;
+    font-size: 25px;
 }
 
-.imageContainer {
-  max-width: 45%;
-  max-height: auto;
-  border: 1rem solid rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  margin-left: 25rem;
+.image {
+    grid-area: image;
+    justify-self: center;
+    height: 400px;
+    width: auto;
 }

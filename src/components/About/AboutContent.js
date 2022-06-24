@@ -1,7 +1,8 @@
-const AboutContent = `I'm passionate about exploring new ways to help people out through tech, and reducing the environmental impact of vehicles.
+const AboutContent = `"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+ sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+ Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+  ex ea commodo consequat.`;
 
-I currently study computer science at Carleton University whilst working at Sunstone Solutions. 
+const AboutSubheader = "About Me!";
 
-Here at Carleton, I have been awarded the Deans' Honour List alongside my 3.9/4.0 GPA.`;
-
-export default AboutContent;
+export { AboutContent, AboutSubheader };
