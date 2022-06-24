@@ -1,8 +1,6 @@
-import styles from './NavbarNames.module.css';
-
 const NavbarNames = props => {
     return (
-        <div className={styles.item}>{props.name}</div>
+        <div className={props.className}>{props.name}</div>
     );
 }
 

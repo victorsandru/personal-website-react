@@ -1,9 +1,9 @@
 import { useRef } from "react";
+import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
-import Card from "./components/UI/Card";
-import Header from "./components/Header/Header";
+import Card1 from "./components/UI/Card1";
+import Landing from "./components/Landing/Landing";
 import About from "./components/About/About";
-import styles from "./App.module.css";
 
 function App() {
   const topPageRef = useRef();
@@ -35,17 +35,22 @@ function App() {
   };
 
   return (
-    <div className={styles.background}>
-      <Navbar
-        onAboutScroll={aboutScrollHandler}
-        onProjectsScroll={projectsScrollHandler}
-        onTopPageScroll={topPageScrollHandler}
-      />
-      <Card>
-        <Header ref={topPageRef}/>
-      </Card>
-      <About ref={aboutRef}/>
-    </div>
+    <Card1>
+      <Navbar />
+      <Landing />
+    </Card1>
+
+    // <div className={styles.background}>
+    //   <Navbar
+    //     onAboutScroll={aboutScrollHandler}
+    //     onProjectsScroll={projectsScrollHandler}
+    //     onTopPageScroll={topPageScrollHandler}
+    //   />
+    //   <Card>
+    //     <Header ref={topPageRef}/>
+    //   </Card>
+    //   <About ref={aboutRef}/>
+    // </div>
   );
 }
 

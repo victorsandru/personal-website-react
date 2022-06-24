@@ -16,7 +16,7 @@ const ICONS = [
   <FontAwesomeIcon icon={faGraduationCap} size="10x" />,
 ];
 
-const HeaderAnimation = (props) => {
+const LandingAnimation = (props) => {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -48,4 +48,4 @@ const HeaderAnimation = (props) => {
   );
 };
 
-export default HeaderAnimation;
+export default LandingAnimation;

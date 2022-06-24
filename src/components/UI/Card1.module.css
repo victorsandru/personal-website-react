@@ -1,0 +1,12 @@
+.container {
+  background: rgb(32, 113, 89);
+  color: rgb(219, 235, 196);
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+  grid-template-rows: 75px 665px 284px;
+  grid-template-areas:
+    "nav nav nav nav"
+    ". main main ."
+    ". . . .";
+}
