@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Card from "./components/UI/Card";
 import Landing from "./components/Landing/Landing";
 import About from "./components/About/About";
+import Experience from "./components/Experience/Experience";
 
 function App() {
 
@@ -11,9 +12,9 @@ function App() {
       <Card>
         <Landing />
         <About />
+        <Experience />
       </Card>
     </>
-
   );
 }
 
