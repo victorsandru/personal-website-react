@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Ubuntu&display=swap');
+
+.button {
+    justify-self: start;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    padding: 7px;
+    color: rgb(219, 235, 196);
+}
