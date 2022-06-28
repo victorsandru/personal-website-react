@@ -1,51 +1,41 @@
-import { useRef } from "react";
+import React, { useState } from "react";
+
 import Navbar from "./components/Navbar/Navbar";
 import Card from "./components/UI/Card";
-import Header from "./components/Header/Header";
+import Landing from "./components/Landing/Landing";
 import About from "./components/About/About";
-import styles from "./App.module.css";
+import Buttons from "./components/Buttons/Buttons";
+import Portfolio from "./components/Portfolio/Portfolio";
+import { experience, projects } from "./components/Portfolio/PortfolioContent";
 
 function App() {
-  const topPageRef = useRef();
-  const aboutRef = useRef();
-  const projectsRef = useRef();
+  const [buttonSelected, setButtonSelected] = useState("projects");
+  const [infoSelected, setInfoSelected] = useState(projects);
 
-  const topPageScrollHandler = () => {
-    window.scrollTo({
-      top: topPageRef.current.offsetTop,
-      left: 0,
-      behavior: "smooth",
-    });
+  const projectsClickHandler = () => {
+    setButtonSelected("projects");
+    setInfoSelected(projects);
   };
 
-  const aboutScrollHandler = () => {
-    window.scrollTo({
-      top: aboutRef.current.offsetTop,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
-
-  const projectsScrollHandler = () => {
-    window.scrollTo({
-      top: projectsRef.current.offsetTop,
-      left: 0,
-      behavior: "smooth",
-    });
+  const experienceClickHandler = () => {
+    setButtonSelected("experience");
+    setInfoSelected(experience);
   };
 
   return (
-    <div className={styles.background}>
-      <Navbar
-        onAboutScroll={aboutScrollHandler}
-        onProjectsScroll={projectsScrollHandler}
-        onTopPageScroll={topPageScrollHandler}
-      />
+    <>
+      <Navbar />
       <Card>
-        <Header ref={topPageRef}/>
+        <Landing />
+        <About />
+        <Buttons
+          onProjectsClick={projectsClickHandler}
+          onExperienceClick={experienceClickHandler}
+          currentSelected={buttonSelected}
+        />
+        <Portfolio infoSelected={infoSelected} />
       </Card>
-      <About ref={aboutRef}/>
-    </div>
+    </>
   );
 }
 

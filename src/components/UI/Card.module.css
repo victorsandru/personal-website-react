@@ -1,33 +1,16 @@
-.card {
-    width: 100%;
-    padding-right: var(1.5rem, 0.75rem);
-    padding-left: var(1.5rem, 0.75rem);
-    margin-right: auto;
-    margin-left: auto;
-}
-
-@media (min-width: 576px) {
-    .card {
-      max-width: 540px;
-    }
-  }
-  @media (min-width: 768px) {
-    .card {
-      max-width: 720px;
-    }
-  }
-  @media (min-width: 992px) {
-    .card {
-      max-width: 960px;
-    }
-  }
-  @media (min-width: 1200px) {
-    .card {
-      max-width: 1140px;
-    }
-  }
-  @media (min-width: 1400px) {
-    .card {
-      max-width: 1320px;
-    }
+.container {
+  background: rgb(32, 113, 89);
+  margin: 0 auto;
+  color: rgb(219, 235, 196);
+  display: grid;
+  height: 220vh;
+  grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+  grid-template-rows: 100vh 45vh 7vh auto 10vh;
+  row-gap: 10px;
+  /* gap: 10px; */
+  grid-template-areas:
+    ". main main ."
+    ". image about ."
+    ". projects experience ."
+    ". container container .";
 }

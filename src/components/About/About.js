@@ -1,20 +1,16 @@
 import styles from "./About.module.css";
-import AboutContent from "./AboutContent";
+import { AboutContent, AboutSubheader } from "./AboutContent";
 import headshot from "../../media/headshot.jpeg";
-
-const subheader = "About me!";
 
 const About = () => {
   return (
-    <div className={styles.container}>
-      <div>
-        <img className={styles.imageContainer} src={headshot} alt="Victor Sandru smiling" />
+    <>
+      <div className={styles.about}>
+        <div className={styles.subheader}>{AboutSubheader}</div>
+        <div className={styles.paragraph}>{AboutContent}</div>
       </div>
-      <div className={styles.headerContainer}>
-        {subheader}
-        <div className={styles.containerSmall}>{AboutContent}</div>
-      </div>
-    </div>
+      <img className={styles.image} src={headshot} alt="Victor Sandru" />
+    </>
   );
 };
 
