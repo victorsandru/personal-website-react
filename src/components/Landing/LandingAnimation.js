@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 
+import styles from './Landing.module.css';
 import TextTransition, { presets } from "react-text-transition";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -11,9 +12,9 @@ import {
 const TEXTS = ["Software Engineer", "DevOps Engineer", "Student"];
 
 const ICONS = [
-  <FontAwesomeIcon icon={faLaptopCode} size="10x" />,
-  <FontAwesomeIcon icon={faGears} size="10x" />,
-  <FontAwesomeIcon icon={faGraduationCap} size="10x" />,
+  <FontAwesomeIcon icon={faLaptopCode} className={styles.iconSize} />,
+  <FontAwesomeIcon icon={faGears} className={styles.iconSize} />,
+  <FontAwesomeIcon icon={faGraduationCap} className={styles.iconSize} />,
 ];
 
 const LandingAnimation = (props) => {

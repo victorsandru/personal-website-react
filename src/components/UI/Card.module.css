@@ -5,7 +5,7 @@
   display: grid;
   height: 220vh;
   grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
-  grid-template-rows: 100vh 45vh 7vh 58vh 10vh;
+  grid-template-rows: 100vh 45vh 7vh auto 10vh;
   row-gap: 10px;
   /* gap: 10px; */
   grid-template-areas:
