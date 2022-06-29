@@ -1,6 +1,5 @@
 import styles from "./Portfolio.module.css";
 import PortfolioContainers from "./PortfolioContainers";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 const Portfolio = (props) => {
   return (
@@ -9,7 +8,7 @@ const Portfolio = (props) => {
         <PortfolioContainers
           title={item.title}
           subtitle={item.subtitle}
-          tools={item.tools}
+          icons={item.icons}
           link={item.link}
           key={item.id}
         />

@@ -24,7 +24,7 @@
     grid-area: image;
     justify-self: center;
     align-self: center;
-    height: 400px;
+    height: 45vh;
     width: auto;
     border-radius: 5%;
 }
