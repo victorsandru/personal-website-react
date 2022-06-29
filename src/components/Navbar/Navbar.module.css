@@ -10,6 +10,7 @@
 }
 
 .item {
+  color: rgb(219, 235, 196);
   float: left;
   padding: 20px 22px;
   font-weight: bolder;
