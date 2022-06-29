@@ -4,6 +4,7 @@
     grid-area: about;
     text-align: left;
     justify-self: start;
+    align-self: center;
 }
 
 .subheader {
@@ -22,6 +23,7 @@
 .image {
     grid-area: image;
     justify-self: center;
+    align-self: center;
     height: 400px;
     width: auto;
     border-radius: 5%;

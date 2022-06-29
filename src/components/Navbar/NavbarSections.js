@@ -1,6 +1,8 @@
+import { Link, animateScroll as scroll } from "react-scroll";
+
 const NavbarSections = props => {
     return (
-        <div className={props.className}>{props.name}</div>
+        <Link className={props.className} to={props.id} offset={-150} smooth={true}>{props.name}</Link>
     );
 }
 

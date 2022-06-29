@@ -4,6 +4,8 @@
   grid-area: container;
   justify-self: center;
   font-family: "Montserrat", sans-serif;
+  scroll-snap-align: start;
+  height: fit-content;
 }
 
 .box {

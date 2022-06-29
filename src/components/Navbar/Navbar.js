@@ -8,8 +8,8 @@ const NAV_ITEMS = [
     id: "about",
   },
   {
-    name: "Experience",
-    id: "experience",
+    name: "Portfolio",
+    id: "portfolio",
   },
   {
     name: "Resume",

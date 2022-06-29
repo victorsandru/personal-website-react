@@ -4,7 +4,7 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 const Portfolio = (props) => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="portfolio">
       {props.infoSelected.map((item) => (
         <PortfolioContainers
           title={item.title}
