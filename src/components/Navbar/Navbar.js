@@ -9,6 +9,7 @@ const Navbar = () => {
   return (
     <>
       <div className={styles.container}>
+        <Link className={styles.item} to="landing" smooth={true}>Victor Sandru</Link>
         <Link className={styles.item} to="about" offset={-150} smooth={true}>
           About
         </Link>

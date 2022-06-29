@@ -24,7 +24,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <Navbar/>
       <Card>
         <Landing />
         <About />

@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
   grid-template-rows: 100vh 100vh 7vh auto 10vh;
-  row-gap: 10px;
+  gap: 10px;
   grid-template-areas:
     ". main main ."
     ". image about ."
