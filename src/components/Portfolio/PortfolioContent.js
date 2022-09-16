@@ -2,6 +2,13 @@ const generateId = () => Math.random().toString(36).substring(7);
 
 const experience = [
   {
+    title: "Carleton University",
+    subtitle: "Professor Assistant",
+    tools: "Python, Java",
+    link: "https://www.linkedin.com/in/victorsandru/",
+    id: generateId(),
+  },
+  {
     title: "Sunstone Solutions",
     subtitle: "DevOps Engineer",
     tools: "Docker, AWS",
@@ -28,7 +35,7 @@ const projects = [
   {
     title: "Personal Website",
     subtitle: "Full-stack Developer",
-    tools: "React, JS",
+    tools: "React, CSS, AWS",
     link: "https://github.com/victorsandru/personal-website-react",
     id: generateId(),
   },
