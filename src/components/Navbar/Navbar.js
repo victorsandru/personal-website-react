@@ -1,33 +1,19 @@
 import styles from "./Navbar.module.css";
 import NavbarIcons from "./NavbarIcons";
-import NavbarSections from "./NavbarSections";
-
-const NAV_ITEMS = [
-  {
-    name: "About",
-    id: "about",
-  },
-  {
-    name: "Experience",
-    id: "experience",
-  },
-  {
-    name: "Resume",
-    id: "resume",
-  },
-];
+import resume from "../../media/resume.pdf";
 
 const Navbar = () => {
   return (
     <div className={styles.container}>
-      {NAV_ITEMS.map((item) => (
-        <NavbarSections
-          className={styles.item}
-          name={item.name}
-          key={item.id}
-          id={item.id}
-        />
-      ))}
+      <div className={styles.itemName}>{"Victor Sandru"}</div>
+      <a
+        className={styles.item}
+        href={resume}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {"Resume"}
+      </a>
       <NavbarIcons className={styles.icon} />
     </div>
   );

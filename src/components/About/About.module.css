@@ -2,6 +2,7 @@
 
 .about {
   grid-area: about;
+  /* display:; */
   text-align: left;
   justify-self: start;
 }
@@ -41,6 +42,6 @@
 
 @media only screen and (min-width: 768px) {
   .image {
-    height: 65%;
+    height: 75%;
   }
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 import Navbar from "./components/Navbar/Navbar";
 import Card from "./components/UI/Card";
@@ -12,6 +12,16 @@ function App() {
   const [buttonSelected, setButtonSelected] = useState("projects");
   const [infoSelected, setInfoSelected] = useState(projects);
 
+  const aboutSection = useRef(null);
+  const experienceSection = useRef(null);
+
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
+
   const projectsClickHandler = () => {
     setButtonSelected("projects");
     setInfoSelected(projects);
@@ -24,16 +34,19 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <Navbar
+        onAboutClick={() => scrollToSection(aboutSection)}
+        onExperienceClick={() => scrollToSection(experienceSection)}
+      />
       <Card>
         <Landing />
-        <About />
+        <About ref={aboutSection} />
         <Buttons
           onProjectsClick={projectsClickHandler}
           onExperienceClick={experienceClickHandler}
           currentSelected={buttonSelected}
         />
-        <Portfolio infoSelected={infoSelected} />
+        <Portfolio ref={experienceSection} infoSelected={infoSelected} />
       </Card>
     </>
   );

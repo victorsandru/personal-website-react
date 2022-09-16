@@ -14,8 +14,23 @@
   padding: 20px 22px;
   font-weight: bolder;
   text-decoration: none;
+  float: left;
+  color: rgb(219, 235, 196);
   font-size: 18px;
   transition: color 0.15s ease-in-out;
+}
+
+.itemName {
+  float: left;
+  padding: 20px 22px;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.15s ease-in-out;
+}
+
+.itemName:hover {
+  color: #fff;
 }
 
 .item:hover {
